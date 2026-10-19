@@ -3,8 +3,6 @@
 An image classifier that sorts waste photos into 6 categories: **cardboard, glass, metal, paper, plastic, trash**.
 It uses transfer learning with a pretrained **ResNet18** in **PyTorch**, and is served as a **FastAPI** REST API with a simple web page for uploading images.
 
-![Demo]("C:\Users\Yash\Pictures\Screenshots\Screenshot 2026-10-19 134754.png")
-
 ## Results
 
 | Metric | Value |
