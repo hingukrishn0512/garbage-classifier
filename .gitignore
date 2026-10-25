@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Dataset (large, can be re-created with prepare_dataset.py)
+Garbage_Image_Dataset/
+
+# Model weights (see note below)
+*.pth
+
+# Environment / secrets
+.env
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
