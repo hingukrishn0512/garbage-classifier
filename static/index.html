@@ -174,6 +174,8 @@
 
       predictBtn.disabled = true;
       predictBtn.textContent = "Predicting...";
+      errorText.style.color = "#555";
+      errorText.textContent = "If the server was idle, the first prediction can take up to a minute to wake up.";
       errorText.textContent = "";
 
       try {
@@ -188,9 +190,11 @@
         }
 
         const data = await response.json();
+        errorText.textContent = "";
         showResult(data);
 
       } catch (error) {
+        errorText.style.color = "#c62828";
         errorText.textContent = "Error: " + error.message;
       }
 

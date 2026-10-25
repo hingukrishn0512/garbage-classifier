@@ -31,6 +31,12 @@ def home():
     return FileResponse(index_path)
 
 
+@app.get("/health")
+def health():
+    # Lightweight endpoint for uptime monitors (keeps the server awake)
+    return {"status": "ok"}
+
+
 @app.get("/classes")
 def classes():
     # The web page can use this to show the list of classes
